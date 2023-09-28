@@ -6,7 +6,7 @@ import Header from './components/header';
 const App = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <main className={`App ${theme === 'dark' ? 'light' : 'dark-theme'}`}>
+    <main className={`App ${theme === 'light' ? 'dark' : 'dark-theme'}`}>
       <Header />
       <Outlet />
     </main>
